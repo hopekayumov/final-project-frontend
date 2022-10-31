@@ -1,10 +1,9 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Link, useParams } from "react-router-dom";
 import BaseCard from "../components/UI/BaseCard";
-import Loader from "../components/UI/Loader";
 import axios from "../plugins/axios";
 import { useEffect } from "react";
+import { useParams } from "react-router-dom";
 
 export default function UpdateUser(props) {
   const { t } = useTranslation();
@@ -30,7 +29,7 @@ export default function UpdateUser(props) {
       setPassword(res.data.password);
     }
     getUser();
-  }, []);
+  }, [id]);
   async function handleUpdate(e) {
     e.preventDefault();
 
