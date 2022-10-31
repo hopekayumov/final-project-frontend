@@ -18,6 +18,8 @@ export default function UpdateUser(props) {
   const [password, setPassword] = useState("");
   let { id } = useParams();
 
+  console.log(user, statusLoading);
+
   useEffect(() => {
     async function getUser() {
       const res = await axios.get(`user/${id}`);
