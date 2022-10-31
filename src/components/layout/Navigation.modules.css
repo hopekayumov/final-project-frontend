@@ -1,0 +1,68 @@
+.navigation {
+  width: 100%;
+  background: rgb(0, 0, 0);
+  transition: all 0.3s ease-in-out;
+}
+
+.logo-text {
+  font-family: "Josefin Sans", sans-serif;
+  color: white;
+}
+
+.menu {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.list {
+  width: 97%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  list-style: none;
+  padding: 1rem 0;
+  text-align: left;
+  -webkit-animation: dropDown 0.5s ease-in-out;
+  animation: dropDown 0.5s ease-in-out;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+  padding: 2rem;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.link:hover {
+  color: black;
+  font-weight: 600;
+}
+
+.list-item {
+  transition: all 0.3s ease-in-out;
+  text-align: right;
+  padding: 0.7rem 0;
+}
+
+.list-item:hover {
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+.logout {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.logout-button {
+  width: 150px;
+}
+
+/*# sourceMappingURL=Navigation.modules.css.map */

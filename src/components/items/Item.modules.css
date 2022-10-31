@@ -1,0 +1,147 @@
+.item-control {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+}
+
+.card {
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.75);
+  border-radius: 12px;
+}
+
+.control {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-item {
+  margin-top: 20px;
+}
+
+.flexcontainer {
+  width: 100%;
+  margin: auto;
+}
+
+.flexcontainer .image {
+  margin: auto;
+}
+
+.flexcontainer img {
+  border-radius: 20px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.flexcontainer .btn-like {
+  width: 150px;
+  background-color: rgb(229, 229, 229);
+  margin-right: 10px;
+}
+
+.flexcontainer .btn-like:hover {
+  background-color: red;
+  color: rgb(255, 255, 255);
+}
+
+.flexcontainer .username {
+  text-decoration: none;
+  color: rgb(0, 72, 226);
+}
+
+.likes {
+  display: flex;
+  margin-top: 80px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.likes .liked-by {
+  margin-left: 10px;
+}
+
+.likes .underline {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.likes .heart-icon {
+  color: red;
+}
+
+.likes .heart-icon-crack {
+  color: rgb(121, 121, 121);
+}
+
+.comment {
+  text-align: left;
+  margin: 0;
+}
+
+.comment p {
+  margin: 0;
+}
+
+.comment a {
+  font-size: 1.2rem;
+}
+
+.dropdown__toggle {
+  margin: 0;
+}
+
+.cookie {
+  color: rgb(181, 90, 26);
+  font-size: 1.5rem;
+}
+
+@media only screen and (min-width: 1001px) {
+  .flexcontainer {
+    display: flex;
+    flex-direction: flex-start;
+  }
+
+  img {
+    height: 250px;
+    max-width: 250px;
+    margin-right: 20px;
+  }
+
+  .image {
+    margin: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .image {
+    width: 100%;
+  }
+
+  .image img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .flexcontainer {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1000px) {
+  img {
+    height: 230px;
+    max-width: 230px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  img {
+    height: 200px;
+    max-width: 200px;
+  }
+}
+
+/*# sourceMappingURL=Item.modules.css.map */
